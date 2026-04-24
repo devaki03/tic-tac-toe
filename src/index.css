@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@700;900&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Comic Neue', cursive;
+  }
+}
+
+.cartoon-font {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 2px;
+}
+
+/* Comic book style heavy black border and drop shadow */
+.comic-border {
+  border: 4px solid #000;
+  box-shadow: 6px 6px 0px #000;
+  border-radius: 12px;
+}
+
+.comic-border-sm {
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0px #000;
+  border-radius: 8px;
+}
+
+.comic-button {
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.comic-button:active {
+  transform: translate(4px, 4px) !important;
+  box-shadow: 2px 2px 0px #000 !important;
+}
+
+/* Halftone dot pattern background effect */
+.halftone-bg {
+  background-image: radial-gradient(circle, #00000015 3px, transparent 4px);
+  background-size: 20px 20px;
+}
+
+.manga-text {
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
